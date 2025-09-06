@@ -1,7 +1,7 @@
 github.com/andybalholm/brotli v1.2.0 h1:ukwgCxwYrmACq68yiUqwIWnGY0cTPox/M94sVwToPjQ=
 github.com/andybalholm/brotli v1.2.0/go.mod h1:rzTDkvFWvIrjDXZHkuS16NPggd91W3kUSvPlQ1pLaKY=
-github.com/birowo/pool v0.0.0-20250905224218-4c0df32e0acf h1:I+/wnBNGwovG7IIESLHrPakxUlE8wJc2laFeElfXkzY=
-github.com/birowo/pool v0.0.0-20250905224218-4c0df32e0acf/go.mod h1:8mzkk8iZeRwkfHBMKztFzgpzuh/ekj6fNue48wjZHcg=
+github.com/birowo/pool v0.0.0-20250906234700-1d38d2dddc1f h1:0YjnzrdyOKahNph5N9cb1WJH6R9MxZ7jCW+IC4P9XEE=
+github.com/birowo/pool v0.0.0-20250906234700-1d38d2dddc1f/go.mod h1:8mzkk8iZeRwkfHBMKztFzgpzuh/ekj6fNue48wjZHcg=
 github.com/birowo/zstdfile v0.0.0-20250906151037-76d162f4a423 h1:cByGxKPLQ9Xj1AiYcoKMR3o4HFmEuOMLQ1QRVCn8SCs=
 github.com/birowo/zstdfile v0.0.0-20250906151037-76d162f4a423/go.mod h1:kA8Rqg8OJ5LrEtWtx6Mzs0A8k4CUwXscrGcBml4njRA=
 github.com/klauspost/compress v1.18.0 h1:c/Cqfb0r+Yi+JtIEq73FWXVkRonBlf0CRNYc8Zttxdo=
