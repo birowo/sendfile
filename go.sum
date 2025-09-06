@@ -1,0 +1,14 @@
+github.com/andybalholm/brotli v1.2.0 h1:ukwgCxwYrmACq68yiUqwIWnGY0cTPox/M94sVwToPjQ=
+github.com/andybalholm/brotli v1.2.0/go.mod h1:rzTDkvFWvIrjDXZHkuS16NPggd91W3kUSvPlQ1pLaKY=
+github.com/birowo/pool v0.0.0-20250905224218-4c0df32e0acf h1:I+/wnBNGwovG7IIESLHrPakxUlE8wJc2laFeElfXkzY=
+github.com/birowo/pool v0.0.0-20250905224218-4c0df32e0acf/go.mod h1:8mzkk8iZeRwkfHBMKztFzgpzuh/ekj6fNue48wjZHcg=
+github.com/birowo/zstdfile v0.0.0-20250906151037-76d162f4a423 h1:cByGxKPLQ9Xj1AiYcoKMR3o4HFmEuOMLQ1QRVCn8SCs=
+github.com/birowo/zstdfile v0.0.0-20250906151037-76d162f4a423/go.mod h1:kA8Rqg8OJ5LrEtWtx6Mzs0A8k4CUwXscrGcBml4njRA=
+github.com/klauspost/compress v1.18.0 h1:c/Cqfb0r+Yi+JtIEq73FWXVkRonBlf0CRNYc8Zttxdo=
+github.com/klauspost/compress v1.18.0/go.mod h1:2Pp+KzxcywXVXMr50+X0Q/Lsb43OQHYWRCY2AiWywWQ=
+github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
+github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
+github.com/valyala/fasthttp v1.65.0 h1:j/u3uzFEGFfRxw79iYzJN+TteTJwbYkru9uDp3d0Yf8=
+github.com/valyala/fasthttp v1.65.0/go.mod h1:P/93/YkKPMsKSnATEeELUCkG8a7Y+k99uxNHVbKINr4=
+github.com/xyproto/randomstring v1.0.5 h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=
+github.com/xyproto/randomstring v1.0.5/go.mod h1:rgmS5DeNXLivK7YprL0pY+lTuhNQW3iGxZ18UQApw/E=
