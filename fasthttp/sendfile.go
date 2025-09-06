@@ -20,36 +20,34 @@ func SendFile(name string, poolSize int32) fasthttp.RequestHandler {
 	type F struct {
 		f, zf  *os.File
 		lm, ct string
-		error
 	}
 	ct := Mime[name[strings.LastIndexByte(name, '.'):]]
 	fp := pool.New(poolSize, func() (f F) {
-		f.f, f.error = os.Open(name)
-		if f.error != nil {
+		var err error
+		f.f, err = os.Open(name)
+		if err != nil {
+			log.Println(err)
 			return
 		}
-		f.zf, f.error = os.Open(zsname)
-		if f.error != nil {
+		f.zf, err = os.Open(zsname)
+		if err != nil {
+			log.Println(err)
 			return
 		}
-		i, _ := f.f.Stat()
-		f.lm = i.ModTime().Format(http.TimeFormat)
-		println(i.Size())
+		info, _ := f.f.Stat()
+		f.lm = info.ModTime().Format(http.TimeFormat)
 		f.ct = ct
 		return
+	}, func(f F) {
+		f.f.Close()
+		f.zf.Close()
 	})
 	return func(ctx *fasthttp.RequestCtx) {
 		f := fp.Get()
-		if f.error != nil {
-			log.Println(f.error)
+		if f.zf != nil {
 			return
 		}
-		defer func() {
-			if !fp.Put(f) {
-				f.f.Close()
-				f.zf.Close()
-			}
-		}()
+		defer fp.Put(f)
 		if string(ctx.Request.Header.Peek("If-Modified-Since")) == f.lm {
 			ctx.SetStatusCode(fasthttp.StatusNotModified)
 			return
