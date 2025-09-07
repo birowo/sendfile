@@ -44,7 +44,7 @@ func SendFile(name string, poolSize int32) fasthttp.RequestHandler {
 	})
 	return func(ctx *fasthttp.RequestCtx) {
 		f := fp.Get()
-		if f.zf != nil {
+		if f.lm == "" {
 			return
 		}
 		defer fp.Put(f)
